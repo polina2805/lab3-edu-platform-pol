@@ -7,7 +7,7 @@ export default function LecturersPage() {
   const [search, setSearch] = useState('');
   const [favorites, setFavorites] = useLocalStorage('favorite_lecturers', []);
   
-  // НОВОЕ: состояние для показа только избранных
+  // состояние для показа только избранных
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
 
   const toggleFavorite = (id) => {
